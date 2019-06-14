@@ -1,4 +1,4 @@
-package no.kotlin.core.extensions
+package no.simensohol.kotlin.extensions.examples
 
 import java.sql.ResultSet
 import java.time.LocalDate

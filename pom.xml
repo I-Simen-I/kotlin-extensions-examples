@@ -4,12 +4,12 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>no.kotlin.core</groupId>
-    <artifactId>kotlin-core</artifactId>
+    <groupId>no.simensohol.kotlin</groupId>
+    <artifactId>kotlin-extensions-examples</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>kotlin-base-core</name>
+    <name>kotlin-extensions-examples</name>
 
     <properties>
         <kotlin.version>1.3.31</kotlin.version>

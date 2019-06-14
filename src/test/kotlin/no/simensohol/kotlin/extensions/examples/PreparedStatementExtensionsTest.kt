@@ -1,4 +1,4 @@
-package no.kotlin.core.extensions
+package no.simensohol.kotlin.extensions.examples
 
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith

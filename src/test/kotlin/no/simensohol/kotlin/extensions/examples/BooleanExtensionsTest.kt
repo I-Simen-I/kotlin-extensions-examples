@@ -1,4 +1,4 @@
-package no.kotlin.core.extensions
+package no.simensohol.kotlin.extensions.examples
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test

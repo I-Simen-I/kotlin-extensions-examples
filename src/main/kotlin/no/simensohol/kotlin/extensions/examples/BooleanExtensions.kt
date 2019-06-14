@@ -1,4 +1,4 @@
-package no.kotlin.core.extensions
+package no.simensohol.kotlin.extensions.examples
 
 fun Boolean.ifTrue(ifTrue: () -> Unit): Boolean {
     if (this) run(ifTrue)
