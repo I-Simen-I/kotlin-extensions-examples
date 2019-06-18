@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test
 internal class BooleanExtensionsTest {
 
     @Test
-    fun `Test that ifTrue executes the given code if Boolean is true`() {
+    fun `Test that ifTrue() executes the given code if Boolean is true`() {
         var aNumber = 4
 
         true
@@ -17,7 +17,7 @@ internal class BooleanExtensionsTest {
     }
 
     @Test
-    fun `Test that ifFalse executes the given code if Boolean is false`() {
+    fun `Test that ifFalse() executes the given code if Boolean is false`() {
         var aNumber = 4
 
         false
@@ -28,7 +28,7 @@ internal class BooleanExtensionsTest {
     }
 
     @Test
-    fun `Test that ifTrueOrElse returns the expected values`() {
+    fun `Test that ifTrueOrElse() returns the expected values`() {
         assertThat(true.ifTrueOrElse({ 1 + 1 }, { 2 + 2 })).isEqualTo(2)
         assertThat(false.ifTrueOrElse({ 1 + 1 }, { 2 + 2 })).isEqualTo(4)
     }

@@ -16,7 +16,7 @@ internal class PreparedStatementExtensionsTest {
     private val preparedStatementMock: PreparedStatement = Mockito.mock(PreparedStatement::class.java)
 
     @Test
-    fun `Test that setNullableLong sets the correct value`() {
+    fun `Test that setNullableLong() sets the correct value`() {
         preparedStatementMock.setNullableLong(PARAMETER_INDEX, 1L)
         Mockito.verify(preparedStatementMock, Mockito.times(1)).setLong(PARAMETER_INDEX, 1L)
 
@@ -25,7 +25,7 @@ internal class PreparedStatementExtensionsTest {
     }
 
     @Test
-    fun `Test that setLocalDate sets the correct value`() {
+    fun `Test that setLocalDate() sets the correct value`() {
         val now = LocalDate.now()
 
         preparedStatementMock.setLocalDate(PARAMETER_INDEX, now)

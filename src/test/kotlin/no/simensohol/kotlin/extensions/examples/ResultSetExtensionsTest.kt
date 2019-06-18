@@ -18,7 +18,7 @@ internal class ResultSetExtensionsTest {
     private val resultSetMock: ResultSet = mock(ResultSet::class.java)
 
     @Test
-    fun `Test that getNullableLong returns the expected value`() {
+    fun `Test that getNullableLong() returns the expected value`() {
         `when`(resultSetMock.getLong(NOT_NULL_COLUMN)).thenReturn(1L)
         `when`(resultSetMock.getLong(NULL_COLUMN)).thenReturn(0L)
         `when`(resultSetMock.wasNull()).thenReturn(false, true)
@@ -31,7 +31,7 @@ internal class ResultSetExtensionsTest {
     }
 
     @Test
-    fun `Test that getLocalDate returns the expected value`() {
+    fun `Test that getLocalDate() returns the expected value`() {
         val now = LocalDate.now()
         `when`(resultSetMock.getDate(NOT_NULL_COLUMN)).thenReturn(Date.valueOf(now))
         `when`(resultSetMock.getDate(NULL_COLUMN)).thenReturn(null)
@@ -44,7 +44,7 @@ internal class ResultSetExtensionsTest {
     }
 
     @Test
-    fun `Test that getEnum returns the expected value`() {
+    fun `Test that getEnum() returns the expected value`() {
         `when`(resultSetMock.getString(NOT_NULL_COLUMN)).thenReturn("EN")
         `when`(resultSetMock.getString(NULL_COLUMN)).thenReturn(null)
 

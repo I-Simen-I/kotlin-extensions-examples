@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 
 internal class AnyExtensionsTest {
     @Test
-    fun `Test isNull() is true`() {
+    fun `Test that isNull() is true`() {
         val nullString: String? = null
         val nullInt: Int? = null
         val nullList: List<Any>? = null
@@ -17,21 +17,21 @@ internal class AnyExtensionsTest {
     }
 
     @Test
-    fun `Test isNull() is false`() {
+    fun `Test that isNull() is false`() {
         assertThat("".isNull()).isFalse()
         assertThat(1.isNull()).isFalse()
         assertThat(listOf("", "").isNull()).isFalse()
     }
 
     @Test
-    fun `Test isNotNull() is true`() {
+    fun `Test that isNotNull() is true`() {
         assertThat("".isNotNull()).isTrue()
         assertThat(1.isNotNull()).isTrue()
         assertThat(listOf("", "").isNotNull()).isTrue()
     }
 
     @Test
-    fun `Test isNotNull() is false`() {
+    fun `Test that isNotNull() is false`() {
         val nullString: String? = null
         val nullInt: Int? = null
         val nullList: List<Any>? = null
