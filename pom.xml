@@ -23,7 +23,7 @@
 
         <!-- Test -->
         <test.junit>5.4.2</test.junit>
-        <test.assertj>3.12.2</test.assertj>
+        <test.assertj>3.27.7</test.assertj>
         <test.mockito-core>2.28.2</test.mockito-core>
     </properties>
 
